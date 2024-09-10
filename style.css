@@ -1,0 +1,78 @@
+body {
+    background-image: url('img/pexels-brett-sayles-1431822.jpg');
+    background-size: cover; /* Ensures the image covers the screen */
+    background-attachment: fixed;
+   
+    
+  }
+  
+  
+  /* Transparent modals inside the container */
+  .container .modal-content {
+    background-color: rgba(255, 255, 255, 0.5); /*  transparent white for modal content */
+    border: none;
+    box-shadow: none;
+  }
+  
+
+.modal-content {
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Darker text color */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  
+  .shadow {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Default shadow */
+    transition: box-shadow 0.3s ease; /* Transition for the shadow on hover */
+  }
+  
+  .shadow:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+    transform: scale(1.1); 
+  }
+
+  #search-bar {
+    width: 600px;         /* Makes the search bar span the full width of its container */
+    max-width: 600px;    /* Adjust this value to set the maximum width */
+    height: 50px;        /* Adjust this value for the height */
+    padding: 10px;       /* Add some padding inside the text field */
+    font-size: 16px;     /* Increase the font size for better readability */
+    border: 1px solid #ccc;  /* Add a border to make it stand out */
+    border-radius: 5px;  /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width */
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centers the search bar horizontally */
+    margin: 20px;            /* Adds margin around the container */
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    cursor: pointer;
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    text-align: center;
+    border-radius: 10px;
+   
+}
+.btn:hover {
+    opacity: 0.8; /* Makes the button slightly transparent when hovered */
+}
+
+.weatherIcon {
+  transition: transform 0.5s ease;
+}
+
+.weatherIcon:hover {
+  transform: scale(1.2);
+}
+
+#forecast{
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  
+}
