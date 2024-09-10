@@ -36,7 +36,7 @@ document.getElementById("map").innerHTML = <div id="googleMap" style="width:100%
 
 function findWeather() {
     let txtsearch = document.getElementById("search-bar").value
-    fetch(`http://api.weatherapi.com/v1/current.json?key=ed07cfd651c0443d826163606240909&q=${txtsearch}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=ed07cfd651c0443d826163606240909&q=${txtsearch}&aqi=no`)
         .then(res => res.json())
         .then(data => {
             document.getElementById("location").innerHTML = data.location.name
@@ -59,7 +59,7 @@ function findWeather() {
 
 function forecast() {
     let txtsearch = document.getElementById("search-bar").value
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=ed07cfd651c0443d826163606240909&q=${txtsearch}&days=9&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=ed07cfd651c0443d826163606240909&q=${txtsearch}&days=9&aqi=no`)
         .then(res => res.json())
         .then(data => {
             document.getElementById("dateforecast1").innerHTML = data.forecast.forecastday[1].date
@@ -185,7 +185,7 @@ function showError(error) {
 
 
 function findWeatherAuto(locationName) {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=ed07cfd651c0443d826163606240909&q=${locationName}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=ed07cfd651c0443d826163606240909&q=${locationName}&aqi=no`)
         .then(res => res.json())
         .then(data => {
 
@@ -205,7 +205,7 @@ function findWeatherAuto(locationName) {
 }
 
 function forecastAuto(locationName) {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=ed07cfd651c0443d826163606240909&q=${locationName}&days=9&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=ed07cfd651c0443d826163606240909&q=${locationName}&days=9&aqi=no`)
         .then(res => res.json())
         .then(data => {
             document.getElementById("dateforecast1").innerHTML = data.forecast.forecastday[1].date
